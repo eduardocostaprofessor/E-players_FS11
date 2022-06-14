@@ -14,10 +14,15 @@
     JOGO DO FROGGY
         https://flexboxfroggy.com/
         
+    GIT E GITHUB PARA INICIANTES UDEMY GRATUITO
+        https://www.udemy.com/course/git-e-github-para-iniciantes/
 
 */
 
-
+@font-face {
+     font-family: "Roboto-Regular"; /* apelido */
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
 /* reset da página */
 * {
     margin: 0;
@@ -33,15 +38,34 @@ header {
     margin: 0 auto;
     max-width: 1200px;
     width: 100%;
-    background-color: #bb8787;
+    /* background-color: #bb8787; */
 }
 
-/* header .menu {
-    
-} */
 
-header .item-menu {
+
+header .header-flex {
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logotipo {
+    width: 280px;
+}
+
+/* navbar */
+header .menu {
+    width: 60%;
+    max-width: 700px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid white; */
+}
+
+/* links */
+header .menu  .item-menu {
     text-decoration: none;
     color: white;
     text-transform: uppercase;
+    font-family: "Roboto-Regular";
 }
