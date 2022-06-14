@@ -1,0 +1,47 @@
+/* 
+    CSS TRICKS
+        https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+    
+        ORIGAMID
+        https://origamid.com/projetos/flexbox-guia-completo/
+
+    MDN
+        https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout/Flexbox
+
+    W3SCHOOLS
+        https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout/Flexbox
+    
+    JOGO DO FROGGY
+        https://flexboxfroggy.com/
+        
+
+*/
+
+
+/* reset da página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: black;
+}
+
+.container-grid {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    background-color: #bb8787;
+}
+
+/* header .menu {
+    
+} */
+
+header .item-menu {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
