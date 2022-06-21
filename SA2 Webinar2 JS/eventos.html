@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="nome" onkeyup="mostraTexto()" placeholder="Digite seu nome">
+    <button onclick="saudarEspecial()">Saudação</button>
+
+    <select onchange="escolheSaudacao(this.value)" >
+        <option value="">Escolha</option>
+        <option value="manha">Manhã</option>
+        <option value="tarde">Tarde</option>
+        <option value="noite">Noite</option>
+    </select>
+    <br>
+    <span id="resultado"></span>
+<script>
+
+    function mostraTexto() {
+        let texto = document.getElementById("nome").value;
+        //span
+        document.getElementById("resultado").innerHTML = texto;
+    }
+
+    function saudarEspecial() {
+        let fulano = document.getElementById("nome").value;//o que o usuário digitou
+        
+        alert(fulano);
+    }
+
+
+    function escolheSaudacao(opcao) {
+
+        if(opcao == "manha") {
+            saudarDia();
+        } else if(opcao == 'tarde'){
+            saudarTarde();
+        } else if(opcao == `noite`){
+            saudarNoite();
+        } else {
+            alert("Opção Inválida");
+        }
+    }
+
+    function saudarDia(){
+        alert("Bom dia !!");
+    }
+
+    function saudarTarde(){
+        alert("Boa tarde !!");
+    }
+    
+    function saudarNoite(){
+        alert("Boa noite !!");
+    }
+</script>    
+</body>
+</html>
