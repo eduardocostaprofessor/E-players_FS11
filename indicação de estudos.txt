@@ -27,3 +27,11 @@ GOOGLE FONTS
 
 PROPRIEDADES DE BACKGROUND
     https://www.maujor.com/tutorial/propriedade-css-para-estilizacao-de-background.php
+
+
+DOCUMENTAÇÃO DO BOOTSTRAP
+    https://getbootstrap.com/docs/5.1/getting-started/introduction/
+    * get started
+    * components
+    * Utilities
+    * Grid

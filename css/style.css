@@ -1,24 +1,3 @@
-/* 
-    CSS TRICKS
-        https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-    
-        ORIGAMID
-        https://origamid.com/projetos/flexbox-guia-completo/
-
-    MDN
-        https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout/Flexbox
-
-    W3SCHOOLS
-        https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout/Flexbox
-    
-    JOGO DO FROGGY
-        https://flexboxfroggy.com/
-        
-    GIT E GITHUB PARA INICIANTES UDEMY GRATUITO
-        https://www.udemy.com/course/git-e-github-para-iniciantes/
-
-*/
-
 @font-face {
     font-family: "Roboto-Regular"; /* apelido */
     src: url(../fonts/Roboto/Roboto-Regular.ttf);
@@ -47,6 +26,7 @@
 
 /****************** CUSTOMIZAÇÃO DO BOOTSTRAP ******************/
 .container {
+    /* por padrão o bootstrap tem o max-width de 1320px */
     max-width: 1200px;
     /* background-color: #C31616; */
 }
