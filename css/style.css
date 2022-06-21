@@ -20,9 +20,20 @@
 */
 
 @font-face {
-     font-family: "Roboto-Regular"; /* apelido */
+    font-family: "Roboto-Regular"; /* apelido */
     src: url(../fonts/Roboto/Roboto-Regular.ttf);
 }
+
+@font-face {
+    font-family: "Roboto-Black";
+    src: url(../fonts/Roboto/Roboto-Black.ttf);
+}
+
+@font-face {
+    font-family: "TitilliumWeb-Bold";
+    src: url(../fonts/Titillium_Web/TitilliumWeb-Bold.ttf);
+}
+
 /* reset da página */
 * {
     margin: 0;
@@ -30,6 +41,19 @@
     box-sizing: border-box;
 }
 
+
+
+
+
+/****************** CUSTOMIZAÇÃO DO BOOTSTRAP ******************/
+.container {
+    max-width: 1200px;
+    /* background-color: #C31616; */
+}
+
+
+
+/****************** HEADER ******************/
 header {
     background-color: black;
 }
@@ -68,4 +92,64 @@ header .menu  .item-menu {
     color: white;
     text-transform: uppercase;
     font-family: "Roboto-Regular";
+}
+
+/****************** BANNER ******************/
+
+.banner {
+    height: 600px;
+    background-color: salmon;
+    background-image: url(../images/banner_pilotos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner .banner-box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 600px;
+    /* border: 3px solid salmon; */
+}
+
+.banner .banner-box .banner-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 500px;
+    height: 280px;
+    /* border: 1px solid white; */
+
+    font-family: "Roboto-Regular";
+    color: white;
+}
+
+.banner .banner-box .banner-info h2 {
+    font-family: "TitilliumWeb-Bold";
+    font-size: 75px;
+    text-align: center;
+}
+
+.banner .banner-box .banner-info p {
+    margin-top: -50px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.banner .banner-info .botao-banner {
+    align-self: center; /* propriedade para filho/item flex somente ele!! */
+    width: 260px;
+    height: 50px;
+    color: white;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    background-color: #C31616;
+    border-radius: 10px;
 }

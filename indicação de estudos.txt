@@ -1,0 +1,24 @@
+
+CSS TRICKS
+    https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+    ORIGAMID
+    https://origamid.com/projetos/flexbox-guia-completo/
+
+MDN
+    https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout/Flexbox
+
+W3SCHOOLS
+    https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout/Flexbox
+
+JOGO DO FROGGY
+    https://flexboxfroggy.com/
+    
+GIT E GITHUB PARA INICIANTES UDEMY GRATUITO
+    https://www.udemy.com/course/git-e-github-para-iniciantes/
+
+GOOGLE FONTS
+    https://fonts.google.com/
+
+PROPRIEDADES DE BACKGROUND
+    https://www.maujor.com/tutorial/propriedade-css-para-estilizacao-de-background.php
