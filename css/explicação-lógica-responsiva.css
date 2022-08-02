@@ -1,0 +1,73 @@
+/* 
+    Mobile First 
+
+    Breakpoints
+    0px     - 767px = Smartphones
+    768px   - 991px = Tablets
+    992px   - 1199 = Desktop
+    1200px   - 1399 = Telas Largas
+    1400px   - * = Full HD
+
+*/
+
+/* CSS de Smartphones */
+
+/* Tablets */
+@media screen and (min-width: 768px) {
+    
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) {
+    
+}
+
+/* Telas Largas */
+@media screen and (min-width: 1200px) {
+    
+}
+
+/* Telas Largas */
+@media screen and (min-width: 1400px) {
+    
+}
+
+
+/* 
+    Desktop First 
+
+    Breakpoints
+    0px     - 767px = Smartphones
+    768px   - 991px = Tablets
+    992px   - 1199 = Desktop
+    1200px   - 1399 = Telas Largas
+    1400px   - * = Full HD
+
+*/
+
+/* CSS do Desktop */
+
+/* Tablet */
+@media screen and (max-width: 767px){
+    
+}
+
+/* Smartphone */
+@media screen and (max-width: 991px){
+    
+}
+
+
+
+
+/* 
+    Se você precisar fazer algum ajuste específico 
+*/
+@media all and (min-width: 450px) and (max-width: 767px) and (orientation: landscape) {
+    
+    .xpto{
+        color: blueviolet;
+        max-width: 250px;
+        min-width: 220px;
+    }
+}

@@ -34,7 +34,7 @@ body {
 /* CSS GENÉRICO */
 .showNavbar {
     left: 0 !important;
-    opacity: 0.95 !important;
+    opacity: 1 !important;
 }
 
 /****************** CUSTOMIZAÇÃO DO BOOTSTRAP ******************/
@@ -183,7 +183,6 @@ header .menu .item-menu {
     background-color: #C31616;
     text-transform: uppercase;
     border: 1px solid #C31616;
-    border-radius: 10px;
 }
 
 /* TABLETS */
@@ -232,22 +231,4 @@ header .menu .item-menu {
     }
 
 
-}
-
-/* Smartphone */
-@media screen and (max-width: 767px) {
-    header .logotipo {
-        width: 240px;
-    }
-    
-    header .hamburger-icon {
-        width: 35px;
-    }
-    
-    header .menu a {
-        border-left: 2px dotted white;
-        margin-bottom: 15px;
-        font-size: 1rem;
-        padding: 10px;
-    }
 }

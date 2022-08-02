@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Mobile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            padding: 10px;
+            display: flex;
+            justify-content: flex-end;
+            background-color: black;
+        } 
+        header img {
+            width: 35px;
+        }
+
+        .showNavbar {
+            left: 0 !important;
+            opacity: 1 !important;
+        }
+         .menu {/*flex container - nav */
+            
+            /*position: relative;  referencial ele mesmo */
+            /*position: absolute;  referencial é o primeiro pai que tiver um position definido */
+
+            position: fixed; /* referencial viewport */
+            top: 0;
+            left: -80%;
+
+
+            /* flexbox */
+            display: flex; 
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+
+            width: 80%;
+            height: 100%;
+            opacity: 0;
+            background-color: salmon;
+
+            transition: left 0.4s, opacity 0.5s;
+        }
+
+        .menu a {
+            width: 85%;
+            margin-bottom: 15px;
+            padding: 15px;
+            color: lightgray;
+            font-size: 1.2rem;
+            text-decoration: none;
+            font-family: sans-serif;
+            font-weight: 300;
+
+            border-left: 2px dotted white;
+
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img onclick="showNavbarMobile();" src="./images/bars.svg" alt="">
+        <nav id="menu" class="menu">
+            <a href="#">HTML</a>
+            <a href="#">CSS</a>
+            <a href="#">JavaScript</a>
+            <a href="#">Lógica de Programação</a>
+        </nav>
+    </header>
+    
+
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem possimus odit cumque architecto eveniet excepturi fugit rerum, ipsam alias id eaque quos, nisi aliquid recusandae facilis laudantium quidem. Error, officiis!</p>
+    
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem possimus odit cumque architecto eveniet excepturi fugit rerum, ipsam alias id eaque quos, nisi aliquid recusandae facilis laudantium quidem. Error, officiis!</p>
+    
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem possimus odit cumque architecto eveniet excepturi fugit rerum, ipsam alias id eaque quos, nisi aliquid recusandae facilis laudantium quidem. Error, officiis!</p>
+    
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem possimus odit cumque architecto eveniet excepturi fugit rerum, ipsam alias id eaque quos, nisi aliquid recusandae facilis laudantium quidem. Error, officiis!</p>
+    
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem possimus odit cumque architecto eveniet excepturi fugit rerum, ipsam alias id eaque quos, nisi aliquid recusandae facilis laudantium quidem. Error, officiis!</p>
+    
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem possimus odit cumque architecto eveniet excepturi fugit rerum, ipsam alias id eaque quos, nisi aliquid recusandae facilis laudantium quidem. Error, officiis!</p>
+    
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem possimus odit cumque architecto eveniet excepturi fugit rerum, ipsam alias id eaque quos, nisi aliquid recusandae facilis laudantium quidem. Error, officiis!</p>
+    
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem possimus odit cumque architecto eveniet excepturi fugit rerum, ipsam alias id eaque quos, nisi aliquid recusandae facilis laudantium quidem. Error, officiis!</p>
+    
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem possimus odit cumque architecto eveniet excepturi fugit rerum, ipsam alias id eaque quos, nisi aliquid recusandae facilis laudantium quidem. Error, officiis!</p>
+    
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem possimus odit cumque architecto eveniet excepturi fugit rerum, ipsam alias id eaque quos, nisi aliquid recusandae facilis laudantium quidem. Error, officiis!</p>
+    
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem possimus odit cumque architecto eveniet excepturi fugit rerum, ipsam alias id eaque quos, nisi aliquid recusandae facilis laudantium quidem. Error, officiis!</p>
+    
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem possimus odit cumque architecto eveniet excepturi fugit rerum, ipsam alias id eaque quos, nisi aliquid recusandae facilis laudantium quidem. Error, officiis!</p>
+    
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem possimus odit cumque architecto eveniet excepturi fugit rerum, ipsam alias id eaque quos, nisi aliquid recusandae facilis laudantium quidem. Error, officiis!</p>
+    
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem possimus odit cumque architecto eveniet excepturi fugit rerum, ipsam alias id eaque quos, nisi aliquid recusandae facilis laudantium quidem. Error, officiis!</p>
+    
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem possimus odit cumque architecto eveniet excepturi fugit rerum, ipsam alias id eaque quos, nisi aliquid recusandae facilis laudantium quidem. Error, officiis!</p>
+    
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem possimus odit cumque architecto eveniet excepturi fugit rerum, ipsam alias id eaque quos, nisi aliquid recusandae facilis laudantium quidem. Error, officiis!</p>
+    
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem possimus odit cumque architecto eveniet excepturi fugit rerum, ipsam alias id eaque quos, nisi aliquid recusandae facilis laudantium quidem. Error, officiis!</p>
+    
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem possimus odit cumque architecto eveniet excepturi fugit rerum, ipsam alias id eaque quos, nisi aliquid recusandae facilis laudantium quidem. Error, officiis!</p>
+    
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem possimus odit cumque architecto eveniet excepturi fugit rerum, ipsam alias id eaque quos, nisi aliquid recusandae facilis laudantium quidem. Error, officiis!</p>
+    
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem possimus odit cumque architecto eveniet excepturi fugit rerum, ipsam alias id eaque quos, nisi aliquid recusandae facilis laudantium quidem. Error, officiis!</p>
+    
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem possimus odit cumque architecto eveniet excepturi fugit rerum, ipsam alias id eaque quos, nisi aliquid recusandae facilis laudantium quidem. Error, officiis!</p>
+    
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem possimus odit cumque architecto eveniet excepturi fugit rerum, ipsam alias id eaque quos, nisi aliquid recusandae facilis laudantium quidem. Error, officiis!</p>
+    
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem possimus odit cumque architecto eveniet excepturi fugit rerum, ipsam alias id eaque quos, nisi aliquid recusandae facilis laudantium quidem. Error, officiis!</p>
+    
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem possimus odit cumque architecto eveniet excepturi fugit rerum, ipsam alias id eaque quos, nisi aliquid recusandae facilis laudantium quidem. Error, officiis!</p> -->
+    <script>
+        function showNavbarMobile() {
+            //tag nav
+            const navbar = document.getElementById('menu');
+            navbar.classList.toggle("showNavbar")
+        }
+    </script>
+</body>
+</html>
