@@ -88,6 +88,9 @@ header .menu .item-menu {
     font-family: "Roboto-Regular";
 }
 
+.hamburger-icon {display: none;}
+
+
 /****************** BANNER ******************/
 
 .banner {
@@ -230,6 +233,8 @@ header .menu .item-menu {
     header .hamburger-icon {
         width: 40px;
     }
+
+    .hamburger-icon {display: block;}
 
 
 }
