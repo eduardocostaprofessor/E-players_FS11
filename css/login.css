@@ -31,7 +31,9 @@ body {
     color: white;
     background-color: black;
 }
-
+a {
+    color: white;
+}
 .container-grid {
     margin: 0 auto;
     max-width: 1200px;
