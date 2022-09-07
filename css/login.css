@@ -1,0 +1,164 @@
+@font-face {
+    font-family: "Roboto-Regular";
+    /* apelido */
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-Black";
+    src: url(../fonts/Roboto/Roboto-Black.ttf);
+}
+
+@font-face {
+    font-family: "TitilliumWeb-Bold";
+    src: url(../fonts/Titillium_Web/TitilliumWeb-Bold.ttf);
+}
+
+/* reset da página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* 
+        propriedades de fonts são herdáveis porém os 
+        links e campos de formulários não as herdam 
+    */
+    font-family: "Roboto-Regular";
+    font-size: 16px;
+    color: white;
+    background-color: black;
+}
+
+.container-grid {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    /* background-color: #bb8787; */
+}
+
+.container-gridflex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.login-header {
+    width: 50%;
+    /* background-color: #1E1C21; */
+    margin-bottom: 20px;
+}
+
+.icone {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.titulo {
+    
+    margin-bottom: 20px;
+}
+
+.frm-login {
+    padding: 50px;
+    align-self: center;
+    width: 50%;
+    background-color: #1E1C21;
+    border-radius: 25px;
+}
+
+.frm-login .linha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    /* background-color: rgba(0, 0, 0, 0.385); */
+    /* border-radius: 12px; */
+    /* border-bottom: 1px solid white; */
+}
+
+.frm-login .linha:first-of-type {
+    border-bottom: 1px solid #C31616;
+}
+
+.frm-login .linha:nth-child(2) {
+    border-bottom: 1px solid grey;
+}
+
+.frm-login .linha i {
+    font-size: 1.5rem;
+}
+
+.frm-login .linha input {
+    width: 95%;
+    height: 35px;
+    padding: 5px 10px;
+    color: gray;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    font-family: "Roboto-Regular";
+}
+
+.frm-login .mensagem {
+    padding: 10px;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #C31616;
+}
+
+/* botões - classe genérica para todos */
+.frm-login .linha .submit {
+    padding: 15px 35px;
+    border-radius: 8px;
+    border: none;
+    font-family: "Roboto-Regular";
+    font-size: 1rem;
+    cursor: pointer;
+    transition: opacity .4s;
+}
+
+.frm-login .linha .submit:hover {
+    opacity: 0.8;
+}
+
+.frm-login .linha .login {
+    background-color: #C31616;
+    color: white;
+    
+}
+
+.frm-login .linha .btn1 {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #C31616;
+}
+
+.frm-login .linha .btn2 {
+    background-color: black;
+    color: white;
+    /* border: 1px dotted white; */
+}
+.frm-login .signup {
+    text-align: right;
+    color: white;
+    font-size: 0.7rem;
+}
+
+.frm-login .signup a {
+    color: #C31616;
+    text-decoration: none;
+}
+
+.frm-login .signup a:hover {
+    font-style: italic;
+}
